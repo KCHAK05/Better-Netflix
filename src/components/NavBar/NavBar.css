@@ -1,0 +1,106 @@
+.NavBar{
+    font-family: "poppins";
+    display: flex;
+    width: 100%;
+    padding: 20px 6%;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 14px;
+    background-color: transparent;
+    background-image: linear-gradient(to top, transparent, black 75%);
+    color:#e5e5e5;
+    z-index: 100;
+}
+.NavBar_left{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.NavBar_left img{
+    width: 90px;
+    cursor: pointer;
+}
+.NavBar_left ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.NavBar_left ul li{
+    cursor: pointer;
+}
+.NavBar_right{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.NavBar_rightProfile{
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+    gap:10px;
+}
+.NavBar_right img{
+    width: 40px;
+    cursor: pointer;
+    gap: 20px;
+    position: relative;
+}
+.NavBar .dropdown{
+    background-color: #191919;
+    top: 80px;
+    right:5%;
+    font-size: 13px;
+    width: max-content;
+    padding: 1% 1%;
+    z-index: 1;
+    text-decoration: underline;
+    border-radius: 10px;
+    /* bottom: 5px; */
+    position: absolute;
+    display: none; 
+}
+.NavBar_rightProfile:hover .dropdown{
+    display: inline;
+}
+.nav-dark
+{
+    background-color: rgba(0,0,0,0.80);
+}
+
+@media (max-width:1000px)
+{
+    .NavBar{
+        justify-content: space-between;
+    }
+    .NavBar_left{
+        gap: 2px;
+    }
+    .NavBar_left img{
+        width: 50px;
+        margin-right: 20px;
+    }
+    .NavBar_left ul{
+        display: inline;
+        gap: 20px;
+    }
+    .NavBar_left li{
+        /* padding-top: 5px; */
+        font-size:x-small;
+    }
+    .NavBar_right{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .NavBar_right img
+    {
+        width: 20px;
+    }
+    .NavBar_right{
+        gap: 5px;
+    }
+    .NavBar_right li,p{
+        font-size: 10px;
+    }
+}
